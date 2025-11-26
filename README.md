@@ -1,0 +1,1 @@
+# solution-fetchera-api-structure
