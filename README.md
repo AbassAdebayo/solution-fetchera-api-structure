@@ -123,6 +123,7 @@ public class ExternalApiService
     private async Task<object> GithubRepos(string q)
     {
         _http.DefaultRequestHeaders.UserAgent.ParseAdd("solution-fetcher");
+        _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "YOUR_GITHUB_TOKEN");
         return await _http.GetFromJsonAsync<object>($"https://api.github.com/search/repositories?q={q}");
     }
 
