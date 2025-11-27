@@ -15,7 +15,8 @@ public class SearchHistory
     public string ResultJson { get; set; }
 }
 ```
-
+To allow EFCore use SQLite effectively during Design time,  SQLitePCL.Batteries.Init() must be called. Namespace: (SQLitePCLRaw.bundle_green),
+Download SQLite/ Compact Toolbox Extension
 ---
 
 
